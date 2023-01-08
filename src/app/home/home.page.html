@@ -1,3 +1,57 @@
 <header class="home-header">
-  <h2>Trabalhe na Elo7</h2>
+  <img src="./../../assets/images/header-image.png" alt="Time do Elo7 reunido">
+  <h1>Trabalhe no Elo7</h1>
 </header>
+
+<div class="main-container">
+  <section class="main-container__top-text-container">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan tortor arcu, vel fermentum odio varius at. Proin vulputate sodales diam at pellentesque. Donec non odio at neque rhoncus blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vitae libero ac dui dapibus iaculis vel eu risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor iaculis porttitor. Duis sagittis finibus lectus, malesuada convallis turpis scelerisque eu</p>
+    <button type="button">
+      <span>VAGAS EM ABERTO</span>
+      <img src="./../../assets/icons/double-arrow-icon.svg" alt="Redirecionar para vagas em aberto">
+    </button>
+  </section>
+  <section class="main-container__ceo-area-container">
+    <img src="./../../assets/images/video-placeholder.png">
+    <div class="main-container__ceo-words-container">
+      <div class="main-container__ceo-words-title">
+        <h3>PALAVRA DO CEO</h3>
+        <h4>Carlos Curioni</h4>
+      </div>
+      <div class="main-container__ceo-words-paragraph">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan tortor arcu, vel fermentum odio varius at. Proin vulputate sodales diam at pellentesque. Donec non odio at neque rhoncus blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vitae libero ac dui dapibus iaculis vel eu risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor iaculis porttitor. Duis sagittis finibus lectus, malesuada convallis turpis scelerisque eu</p>
+      </div>
+    </div>
+  </section>
+  <section class="main-container__meet-team-container">
+    <h3>CONHEÇA NOSSO TIME FORA DE SÉRIE</h3>
+    <div class="main-container__members-images">
+      <img *ngFor="let member of teamMembers" [src]="member.url" alt="Foto de {{ member.name }}">
+    </div> 
+  </section>
+  <section class="main-container__company-characteristics">
+    <div class="main-container__characteristics-cards">
+      <div class="main-container__card">
+        <img src="./../../assets/icons/quality-icon.png">
+        <h3>QUALIDADE DE VIDA</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros erat, pellentesque vitae tristique non, dignissim vel lorem.</p>
+      </div>
+      <div class="main-container__card">
+        <img src="./../../assets/icons/relaxation-icon.png">
+        <h3>AMBIENTE DESCONTRAÍDO</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros erat, pellentesque vitae tristique non, dignissim vel lorem.</p>
+      </div>
+      <div class="main-container__card">
+        <img src="./../../assets/icons/activities-icon.png">
+        <h3>ATIVIDADES EXTRAS</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros erat, pellentesque vitae tristique non, dignissim vel lorem.</p>
+      </div>
+    </div>
+    <img src="./../../assets/images/bottom-image.png">
+  </section>
+  <section class="main-container__open-jobs-container">
+    <h3>VAGAS EM ABERTO</h3>
+    <p> TO DO!</p>
+  </section>
+
+</div>

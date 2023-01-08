@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Rotunda;
+  src: url('./assets/fonts/rotunda-regular.otf');
+}
+
+body {
+  margin: 0;
+  font-family: Rotunda, 'sans-serif';
+}
+
+h1, h3, h4 {
+  margin: 0;
+}

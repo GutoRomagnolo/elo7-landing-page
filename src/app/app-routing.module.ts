@@ -1,20 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { QuicklinkStrategy, QuicklinkModule } from 'ngx-quicklink';
-import { HomePageModule } from './home/home.module';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomePageModule }
+  { path: 'home', loadChildren: () => import('./home/home.module').then(importedModule => importedModule.HomePageModule) }
 ];
 
 @NgModule({
-  imports: [
-    QuicklinkModule,
-    RouterModule.forRoot(routes, {
-      preloadingStrategy: QuicklinkStrategy
-    })
-  ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
