@@ -1,13 +1,28 @@
 @font-face {
-  font-family: Rotunda;
-  src: url('./assets/fonts/rotunda-regular.otf');
+  font-family: Museo;
+  src: url('./assets/fonts/MuseoSans_500.otf');
 }
 
 body {
   margin: 0;
-  font-family: Rotunda, 'sans-serif';
+  font-family: Museo, 'sans-serif';
 }
 
 h1, h3, h4 {
   margin: 0;
+}
+
+.primary-button {
+  display: flex;
+  font-family: inherit;
+  font-size: 1.5rem;
+  align-items: center;
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+  color: #00a6b6;
+
+  img {
+    width: 10%;
+  }
 }

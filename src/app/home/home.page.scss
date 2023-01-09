@@ -4,6 +4,26 @@ h1 {
   text-shadow: 4px 5px 7px rgba(0, 0, 0, 0.8);
 }
 
+h3 {
+  color: #58575b;
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #ffc02a;
+}
+
+p {
+  font-family: inherit;
+  font-size: 1.2rem;
+}
+
+hr {
+  width: 50%;
+  color: #dddd;
+}
+
 .home-header {
   display: flex;
   justify-content: center;
@@ -23,34 +43,34 @@ h1 {
 .main-container {
   display: flex;
   flex-direction: column;
-  padding: 2rem 10rem;
 
   &__top-text-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    button {
-      display: flex;
-      align-items: center;
-      border: none;
-      background-color: transparent;
-    }
+    text-align: center;
+    padding: 2rem 8rem;
   }
 
   &__ceo-area-container {
     display: flex;
     background-color: #f0f0f0;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 8rem;
+    
+    img {
+      width: 50%;
+    }
+  }
 
+  &__ceo-words-container {
+    width: 40%;
   }
 
   &__ceo-words-title {
     display: flex;
     flex-direction: column;
-
-    h4 {
-      color: #ffc02a;
-    }
   }
 
   &__ceo-words-paragraph {
@@ -61,20 +81,47 @@ h1 {
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 2rem 8rem;
   }
 
   &__members-images {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    img {
+      width: 20%;
+    }
   }
 
   &__company-characteristics {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem 8rem;
   }
 
   &__characteristics-cards {
     display: flex;
+    justify-content: space-between;
+  }
+
+  &__unitary-member-card {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    width: 30%;
+
+    h3 {
+      padding: 1.5rem 0;
+    }
+
+    img {
+      width: 40%;
+    }
+
+    p {
+      margin: 0;
+    }
   }
 }

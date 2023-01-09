@@ -1,57 +1,117 @@
 <header class="home-header">
-  <img src="./../../assets/images/header-image.png" alt="Time do Elo7 reunido">
+  <img
+    src="./../../assets/images/header-image.png"
+    alt="Time do Elo7 reunido"
+  />
   <h1>Trabalhe no Elo7</h1>
 </header>
 
 <div class="main-container">
   <section class="main-container__top-text-container">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan tortor arcu, vel fermentum odio varius at. Proin vulputate sodales diam at pellentesque. Donec non odio at neque rhoncus blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vitae libero ac dui dapibus iaculis vel eu risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor iaculis porttitor. Duis sagittis finibus lectus, malesuada convallis turpis scelerisque eu</p>
-    <button type="button">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan
+      tortor arcu, vel fermentum odio varius at. Proin vulputate sodales diam at
+      pellentesque. Donec non odio at neque rhoncus blandit. Orci varius natoque
+      penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus
+      vitae libero ac dui dapibus iaculis vel eu risus. Lorem ipsum dolor sit
+      amet, consectetur adipiscing elit. Integer tempor iaculis porttitor. Duis
+      sagittis finibus lectus, malesuada convallis turpis scelerisque eu
+    </p>
+    <hr>
+    <button type="button" class="primary-button">
       <span>VAGAS EM ABERTO</span>
-      <img src="./../../assets/icons/double-arrow-icon.svg" alt="Redirecionar para vagas em aberto">
+      <img
+        src="./../../assets/icons/double-arrow-icon.svg"
+        alt="Redirecionar para vagas em aberto"
+      />
     </button>
   </section>
   <section class="main-container__ceo-area-container">
-    <img src="./../../assets/images/video-placeholder.png">
+    <img src="./../../assets/images/video-placeholder.png" />
     <div class="main-container__ceo-words-container">
       <div class="main-container__ceo-words-title">
         <h3>PALAVRA DO CEO</h3>
         <h4>Carlos Curioni</h4>
       </div>
       <div class="main-container__ceo-words-paragraph">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan tortor arcu, vel fermentum odio varius at. Proin vulputate sodales diam at pellentesque. Donec non odio at neque rhoncus blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vitae libero ac dui dapibus iaculis vel eu risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor iaculis porttitor. Duis sagittis finibus lectus, malesuada convallis turpis scelerisque eu</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          accumsan tortor arcu, vel fermentum odio varius at. Proin vulputate
+          sodales diam at pellentesque. Donec non odio at neque rhoncus blandit.
+          Orci varius natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus. Vivamus vitae libero ac dui dapibus iaculis
+          vel eu risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Integer tempor iaculis porttitor. Duis sagittis finibus lectus,
+          malesuada convallis turpis scelerisque eu
+        </p>
       </div>
     </div>
   </section>
   <section class="main-container__meet-team-container">
-    <h3>CONHEÇA NOSSO TIME FORA DE SÉRIE</h3>
+    <h3>CONHEÇA NOSSO TIME<br />FORA DE SÉRIE</h3>
     <div class="main-container__members-images">
-      <img *ngFor="let member of teamMembers" [src]="member.url" alt="Foto de {{ member.name }}">
-    </div> 
+      <img
+        *ngFor="let member of teamMembers"
+        [src]="member.url"
+        alt="Foto de {{ member.name }}"
+      />
+    </div>
   </section>
   <section class="main-container__company-characteristics">
     <div class="main-container__characteristics-cards">
-      <div class="main-container__card">
-        <img src="./../../assets/icons/quality-icon.png">
+      <div class="main-container__unitary-member-card">
+        <img src="./../../assets/icons/quality-icon.png" />
         <h3>QUALIDADE DE VIDA</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros erat, pellentesque vitae tristique non, dignissim vel lorem.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu
+          luctus sem. Nullam laoreet quam nibh, et lacinia quam aliquam at.
+          Suspendisse maximus urna sit amet imperdiet efficitur. Quisque sit
+          amet massa dapibus, malesuada mi non, eleifend sapien. Nulla nec
+          libero faucibus dui iaculis imperdiet. Vestibulum blandit lorem quis
+          leo lacinia, eu suscipit nisi aliquam. Maecenas velit tortor, finibus
+          sit amet congue ac, maximus vel est. Proin imperdiet ornare egestas.
+          In lacinia felis a malesuada rhoncus. Etiam sagittis pulvinar dui, ac
+          laoreet leo. Fusce ut mollis massa. Pellentesque eu tortor id nibh
+          ornare aliquam et at orci.
+        </p>
       </div>
-      <div class="main-container__card">
-        <img src="./../../assets/icons/relaxation-icon.png">
+      <div class="main-container__unitary-member-card">
+        <img src="./../../assets/icons/relaxation-icon.png" />
         <h3>AMBIENTE DESCONTRAÍDO</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros erat, pellentesque vitae tristique non, dignissim vel lorem.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu
+          luctus sem. Nullam laoreet quam nibh, et lacinia quam aliquam at.
+          Suspendisse maximus urna sit amet imperdiet efficitur. Quisque sit
+          amet massa dapibus, malesuada mi non, eleifend sapien. Nulla nec
+          libero faucibus dui iaculis imperdiet. Vestibulum blandit lorem quis
+          leo lacinia, eu suscipit nisi aliquam. Maecenas velit tortor, finibus
+          sit amet congue ac, maximus vel est. Proin imperdiet ornare egestas.
+          In lacinia felis a malesuada rhoncus. Etiam sagittis pulvinar dui, ac
+          laoreet leo. Fusce ut mollis massa. Pellentesque eu tortor id nibh
+          ornare aliquam et at orci.
+        </p>
       </div>
-      <div class="main-container__card">
-        <img src="./../../assets/icons/activities-icon.png">
+      <div class="main-container__unitary-member-card">
+        <img src="./../../assets/icons/activities-icon.png" />
         <h3>ATIVIDADES EXTRAS</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros erat, pellentesque vitae tristique non, dignissim vel lorem.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu
+          luctus sem. Nullam laoreet quam nibh, et lacinia quam aliquam at.
+          Suspendisse maximus urna sit amet imperdiet efficitur. Quisque sit
+          amet massa dapibus, malesuada mi non, eleifend sapien. Nulla nec
+          libero faucibus dui iaculis imperdiet. Vestibulum blandit lorem quis
+          leo lacinia, eu suscipit nisi aliquam. Maecenas velit tortor, finibus
+          sit amet congue ac, maximus vel est. Proin imperdiet ornare egestas.
+          In lacinia felis a malesuada rhoncus. Etiam sagittis pulvinar dui, ac
+          laoreet leo. Fusce ut mollis massa. Pellentesque eu tortor id nibh
+          ornare aliquam et at orci.
+        </p>
       </div>
     </div>
-    <img src="./../../assets/images/bottom-image.png">
+    <img src="./../../assets/images/bottom-image.png" />
   </section>
   <section class="main-container__open-jobs-container">
     <h3>VAGAS EM ABERTO</h3>
-    <p> TO DO!</p>
+    <p>TO DO!</p>
   </section>
-
 </div>
