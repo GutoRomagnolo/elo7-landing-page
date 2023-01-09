@@ -21,6 +21,12 @@ h1, h3, h4 {
   border: none;
   background-color: transparent;
   color: #00a6b6;
+  transition: 0.1s linear;
+  cursor: pointer; //Esse botão requer pointer, pois não se parece um botão
+
+  &:hover {
+    transform: scale(1.01);
+  }
 
   img {
     width: 10%;
