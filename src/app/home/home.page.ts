@@ -1,4 +1,7 @@
-import { Component, ViewEncapsulation } from "@angular/core";
+import { Component, ViewEncapsulation, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
+import { OpenJobs } from "@app/core";
+import { OpenJobsResolveService } from "./services/resolve.service"
 
 @Component({
   selector: "app-home",
@@ -6,8 +9,10 @@ import { Component, ViewEncapsulation } from "@angular/core";
   styleUrls: ["./home.page.scss"],
   encapsulation: ViewEncapsulation.None,
 })
-export class HomePageComponent {
+export class HomePageComponent implements OnInit {
   public title = "home-page";
+  public openJobs: OpenJobs[] = [];
+
   public teamMembers: Array<{ name: String; url: String }> = [
     {
       name: "Camila",
@@ -26,4 +31,18 @@ export class HomePageComponent {
       url: "./../assets/images/beatriz-image.png",
     },
   ];
+
+  constructor(
+    private route: ActivatedRoute,
+    private openJobsResolveService: OpenJobsResolveService
+  ) {}
+
+  ngOnInit() {
+    this.loadOpenJobs()
+  }
+
+  private loadOpenJobs(): any {
+    this.openJobs = this.openJobsResolveService.resolve();
+    console.log('this.openJobs', this.openJobs)
+  }
 }
