@@ -1,6 +1,7 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 import { OpenJobsResolveService } from './resolve.service';
+import { of } from 'rxjs';
 
 describe('Testing OpenJobsResolveService', () => {
   let resolverService: OpenJobsResolveService;
@@ -17,8 +18,4 @@ describe('Testing OpenJobsResolveService', () => {
     TestBed.inject(OpenJobsResolveService);
     expect(resolverService).toBeTruthy();
   });
-
-  it('Call resolver function should be return an array of open jobs', () => {
-    TestBed.inject(OpenJobsResolveService);
-  })
 });
