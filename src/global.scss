@@ -9,8 +9,12 @@ body {
   font-family: Museo, 'sans-serif';
 }
 
-h1, h3, h4 {
+h1, h3, h4, p {
   margin: 0;
+}
+
+p {
+  line-height: 2rem;
 }
 
 .primary-button {
@@ -32,4 +36,23 @@ h1, h3, h4 {
   img {
     width: 10%;
   }
+}
+
+.paragraph {
+  &--primary {
+    color: #4f5458
+  }
+
+  &--secundary {
+    color: #918f96; 
+  }
+}
+
+
+.standard-link {
+  color: #00a6b6;
+  margin: 0;
+  text-decoration: none;
+  font-size: inherit;
+  font-size: 1.2rem;
 }

@@ -2,11 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { HomePageComponent } from './home.page';
+import { OpenJobsResolveService } from './services/resolve/resolve.service';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomePageComponent
+    component: HomePageComponent,
+    resolve: {
+      activeOpenJobs: OpenJobsResolveService
+    }
   }
 ];
 

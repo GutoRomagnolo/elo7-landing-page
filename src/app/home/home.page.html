@@ -8,7 +8,7 @@
 
 <div class="main-container">
   <section class="main-container__top-text-container">
-    <p>
+    <p class="paragraph--primary">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan
       tortor arcu, vel fermentum odio varius at. Proin vulputate sodales diam at
       pellentesque. Donec non odio at neque rhoncus blandit. Orci varius natoque
@@ -18,7 +18,7 @@
       sagittis finibus lectus, malesuada convallis turpis scelerisque eu
     </p>
     <hr>
-    <button type="button" class="primary-button">
+    <button type="button" (click)="scrollToElement(target)" class="primary-button">
       <span>VAGAS EM ABERTO</span>
       <img
         src="./../../assets/icons/double-arrow-icon.svg"
@@ -34,7 +34,7 @@
         <h4>Carlos Curioni</h4>
       </div>
       <div class="main-container__ceo-words-paragraph">
-        <p>
+        <p class="paragraph--primary">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
           accumsan tortor arcu, vel fermentum odio varius at. Proin vulputate
           sodales diam at pellentesque. Donec non odio at neque rhoncus blandit.
@@ -49,12 +49,14 @@
   </section>
   <section class="main-container__meet-team-container">
     <h3>CONHEÇA NOSSO TIME<br />FORA DE SÉRIE</h3>
-    <div class="main-container__members-images">
-      <img
-        *ngFor="let member of teamMembers"
-        [src]="member.url"
-        alt="Foto de {{ member.name }}"
-      />
+    <div class="main-container__members-images-container">
+      <div class="main-container__unitary-member-image" *ngFor="let member of teamMembers">
+        <img
+          [src]="member.url"
+          alt="Foto de {{ member.name }}"
+        />
+        <p class="paragraph--secundary">{{ member.name }}</p>
+      </div>
     </div>
   </section>
   <section class="main-container__company-characteristics">
@@ -62,7 +64,7 @@
       <div class="main-container__unitary-characteristic-card">
         <img src="./../../assets/icons/quality-icon.png" />
         <h3>QUALIDADE DE VIDA</h3>
-        <p>
+        <p class="paragraph--secundary">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu
           luctus sem. Nullam laoreet quam nibh, et lacinia quam aliquam at.
           Suspendisse maximus urna sit amet imperdiet efficitur. Quisque sit
@@ -78,7 +80,7 @@
       <div class="main-container__unitary-characteristic-card">
         <img src="./../../assets/icons/relaxation-icon.png" />
         <h3>AMBIENTE DESCONTRAÍDO</h3>
-        <p>
+        <p class="paragraph--secundary">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu
           luctus sem. Nullam laoreet quam nibh, et lacinia quam aliquam at.
           Suspendisse maximus urna sit amet imperdiet efficitur. Quisque sit
@@ -94,7 +96,7 @@
       <div class="main-container__unitary-characteristic-card">
         <img src="./../../assets/icons/activities-icon.png" />
         <h3>ATIVIDADES EXTRAS</h3>
-        <p>
+        <p class="paragraph--secundary">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu
           luctus sem. Nullam laoreet quam nibh, et lacinia quam aliquam at.
           Suspendisse maximus urna sit amet imperdiet efficitur. Quisque sit
@@ -109,7 +111,7 @@
       </div>
     </div>
     <hr>
-    <button type="button" class="primary-button">
+    <button type="button" (click)="redirectToElo7Page()" class="primary-button">
       <span>SAIBA MAIS</span>
       <img
         src="./../../assets/icons/double-arrow-icon.svg"
@@ -118,8 +120,20 @@
     </button>
   </section>
   <section class="main-container__open-jobs-container">
-    <img src="./../../assets/images/bottom-image.png"/>
-    <h3>VAGAS EM ABERTO</h3>
-    <p>TO DO!</p>
+    <div class="main-container__open-jobs-header" #target>
+      <img src="./../../assets/images/bottom-image.png"/>
+      <h3>VAGAS EM ABERTO</h3>
+    </div>
+    <div class="main-container__centralized-open-jobs">
+    <div class="main-container__jobs-subtitle">
+      <h3>DESENVOLVIMENTO</h3>
+    </div>
+    <div class="main-container__open-jobs-cards">
+      <div class="main-container__active-open-jobs" *ngFor="let job of activeOpenJobs">
+        <a class="standard-link" [href]="job.link" title="Abrir link da vaga">{{ job.position }}</a>
+        <p class="paragraph--secundary"> {{ job.formatedLocation ? job.formatedLocation : 'Remoto' }}</p>
+      </div>
+    </div>
+    </div>
   </section>
 </div>

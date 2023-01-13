@@ -20,7 +20,8 @@ p {
 }
 
 hr {
-  width: 50%;
+  margin: 1.5rem 0 1.5rem 0;
+  width: 30%;
   color: #dddd;
 }
 
@@ -32,12 +33,12 @@ hr {
   img {
     position: relative;
     width: 100%;
-    filter: blur(0.125rem); /* apply the blur */
+    filter: blur(0.125rem);
   }
 
   h1 {
     position: absolute;
-    padding-bottom: 5rem;
+    padding-bottom: 15rem;
   }
 }
 
@@ -56,7 +57,6 @@ hr {
   &__ceo-area-container {
     display: flex;
     background-color: #f0f0f0;
-    justify-content: space-between;
     align-items: flex-start;
     padding: 4rem 8rem 2rem 8rem;
     
@@ -66,15 +66,23 @@ hr {
   }
 
   &__ceo-words-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
     width: 40%;
   }
 
   &__ceo-words-title {
     display: flex;
     flex-direction: column;
+
+    h3 {
+      padding-bottom: 0.5rem;
+    }
   }
 
   &__ceo-words-paragraph {
+    padding-top: 4rem;
     text-align: justify;
   }
 
@@ -91,12 +99,19 @@ hr {
     }
   }
 
-  &__members-images {
+  &__members-images-container {
     display: flex;
     justify-content: space-between;
+  }
 
-    img {
-      width: 20%;
+  &__unitary-member-image {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+
+    p {
+      padding-top: 1rem;
+      font-size: 1.6rem;
     }
   }
 
@@ -126,17 +141,20 @@ hr {
     img {
       width: 40%;
     }
-
-    p {
-      margin: 0;
-    }
   }
 
   &__open-jobs-container {
     display: flex;
     flex-direction: column;
+    padding: 0 8rem 4rem 8rem;
     align-items: center;
-    padding: 4rem 8rem;
+  }
+
+  &__open-jobs-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 
     img {
       width: 100%;
@@ -144,6 +162,32 @@ hr {
 
     h3 {
       padding-top: 4rem;
+    }
+  }
+
+  &__centralized-open-jobs {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+    h3 {
+      padding: 4rem 0 1.5rem 0;
+    }
+  }
+
+  &__open-jobs-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__active-open-jobs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    p, a {
+      font-size: 1.6rem;
     }
   }
 }

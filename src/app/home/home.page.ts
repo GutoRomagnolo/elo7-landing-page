@@ -1,7 +1,7 @@
 import { Component, ViewEncapsulation, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { OpenJobs } from "@app/core";
-import { OpenJobsResolveService } from "./services/resolve.service"
+import { OpenJobsResolveService } from "./services/resolve/resolve.service"
 
 @Component({
   selector: "app-home",
@@ -10,8 +10,7 @@ import { OpenJobsResolveService } from "./services/resolve.service"
   encapsulation: ViewEncapsulation.None,
 })
 export class HomePageComponent implements OnInit {
-  public title = "home-page";
-  public openJobs: OpenJobs[] = [];
+  public activeOpenJobs: OpenJobs[] = [];
 
   public teamMembers: Array<{ name: String; url: String }> = [
     {
@@ -33,16 +32,37 @@ export class HomePageComponent implements OnInit {
   ];
 
   constructor(
-    private route: ActivatedRoute,
-    private openJobsResolveService: OpenJobsResolveService
+    private activatedRoute: ActivatedRoute
   ) {}
 
   ngOnInit() {
-    this.loadOpenJobs()
+    this.activatedRoute.data.subscribe(routeResponse => {
+      if (routeResponse.activeOpenJobs) {
+        this.activeOpenJobs = routeResponse.activeOpenJobs;
+        this.formatOpenJobsLocations();
+      }
+    })
   }
 
-  private loadOpenJobs(): any {
-    this.openJobs = this.openJobsResolveService.resolve();
-    console.log('this.openJobs', this.openJobs)
+  public scrollToElement($element: any): void {
+    $element.scrollIntoView({
+      behavior: "smooth", 
+      block: "start", 
+      inline: "nearest"
+    });
+  }
+
+  public redirectToElo7Page(): void {
+    window.open('https://www.elo7.com.br/sobre', '_blank')
+  }
+
+  private formatOpenJobsLocations(): void {
+    this.activeOpenJobs.forEach(activeJob => {
+      if (activeJob.location != 'Remoto') {
+        activeJob.formatedLocation = `
+          ${activeJob.location.neighborhood} - ${activeJob.location.city}, ${activeJob.location.country}
+        `;
+      }
+    })
   }
 }
