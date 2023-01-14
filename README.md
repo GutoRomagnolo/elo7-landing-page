@@ -18,12 +18,20 @@ Sobre o client de requisições, não vejo a necessidade utilizar o Axios (que �
 
 Em estilos, trabalhei com o SCSS e media queries para construir a responsividade da página. =)
 
+## Modificações no layout sugerido
+
+As únicas coisas que modifiquei do layout original foram:
+
+- A imagem do header. Tive que aplicar um blur nessa imagem, pois a resolução dela estava muito baixa, deixando-a pixelada em monitores maiores;
+- Os textos. Após achar e assistir ao vídeo inteiro do Carlos Curioni (o vídeo do template original rs), decidi trocar os textos genéricos de lorem ipsum para textos escritos. Alguns aproveitei de materiais prontos, outros escrevi baseado no que consumi sobre a empresa e sua história.
+
 ## Requisitos
 
 - NodeJS v19.4.0
 
 Caso possua o [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm), basta rodar no terminal:
 ```sh
+  nvm install
   nvm use
 ```
 
