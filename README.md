@@ -51,4 +51,6 @@ Após todas as instalacões:
 
 A página irá abrir automaticamente na URL ``http://localhost:4200/``
 
+Qualquer dúvida, basta dar uma olhada no arquivo ``package.json``
+
 
