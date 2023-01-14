@@ -1,7 +1,6 @@
 import { Component, ViewEncapsulation, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { OpenJobs } from "@app/core";
-import { OpenJobsResolveService } from "./services/resolve/resolve.service"
 
 @Component({
   selector: "app-home",
