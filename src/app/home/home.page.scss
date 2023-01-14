@@ -1,28 +1,48 @@
+@import '../../variables.scss';
+
 h1 {
   color: #f2f1f1;
   font-size: 5rem;
   text-shadow: 4px 5px 7px rgba(0, 0, 0, 0.8);
+
+  @media only screen and (max-width: map-get($responsive, 'sm')) {
+    font-size: 2rem;
+  }
 }
 
 h3 {
   color: #58575b;
   font-size: 2rem;
+
+  
+  @media only screen and (max-width: map-get($responsive, 'sm')) {
+    font-size: 1.2rem;
+  }
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: #ffc02a;
 }
 
 p {
   font-family: inherit;
   font-size: 1.2rem;
+
+  @media only screen and (max-width: map-get($responsive, 'sm')) {
+    font-size: 1rem;
+  }
 }
 
 hr {
   margin: 1.5rem 0 1.5rem 0;
   width: 30%;
   color: #dddd;
+
+  @media only screen and (max-width: map-get($responsive, 'sm')) {
+    width: 60%;
+    margin: 1rem 0 1rem 0;
+  }
 }
 
 .home-header {
@@ -31,7 +51,6 @@ hr {
   align-items: flex-end;
 
   img {
-    position: relative;
     width: 100%;
     filter: blur(0.125rem);
   }
@@ -39,6 +58,10 @@ hr {
   h1 {
     position: absolute;
     padding-bottom: 15rem;
+
+    @media only screen and (max-width: map-get($responsive, 'sm')) {
+      padding-bottom: 3rem;
+    }
   }
 }
 
@@ -52,6 +75,11 @@ hr {
     align-items: center;
     text-align: center;
     padding: 4rem 8rem;
+
+    @media only screen and (max-width: map-get($responsive, 'sm')) {
+      padding: 2rem 4rem;
+      text-align: justify;
+    }
   }
 
   &__ceo-area-container {
@@ -63,6 +91,16 @@ hr {
     img {
       width: 50%;
     }
+
+    @media only screen and (max-width: map-get($responsive, 'sm')) {
+      align-items: center;
+      flex-direction: column;
+      padding: 2rem 4rem 1rem 4rem;
+
+      img {
+        width: 100%;
+      }
+    }
   }
 
   &__ceo-words-container {
@@ -70,6 +108,13 @@ hr {
     flex-direction: column;
     padding-left: 5rem;
     width: 40%;
+
+    
+    @media only screen and (max-width: map-get($responsive, 'sm')) {
+      width: 100%;
+      padding: 1rem 0 0 0;
+      justify-content: flex-start;
+    }
   }
 
   &__ceo-words-title {
@@ -84,6 +129,10 @@ hr {
   &__ceo-words-paragraph {
     padding-top: 4rem;
     text-align: justify;
+
+    @media only screen and (max-width: map-get($responsive, 'sm')) {
+      padding-top: 2rem;
+    }
   }
 
   &__meet-team-container {
@@ -97,11 +146,24 @@ hr {
     h3 {
       padding-bottom: 4rem;
     }
+
+    @media only screen and (max-width: map-get($responsive, 'sm')) {
+      padding: 2rem 4rem;
+
+      h3 {
+        padding-bottom: 2rem;
+      }
+    }
   }
 
   &__members-images-container {
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: map-get($responsive, 'sm')) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__unitary-member-image {
@@ -113,6 +175,16 @@ hr {
       padding-top: 1rem;
       font-size: 1.6rem;
     }
+
+    @media only screen and (max-width: map-get($responsive, 'sm')) {
+      width: 80%;
+      padding-bottom: 1rem;
+
+      p {
+        padding-top: 0.2rem;
+        font-size: 1rem;
+      }
+    }
   }
 
   &__company-characteristics {
@@ -120,11 +192,23 @@ hr {
     flex-direction: column;
     align-items: center;
     padding: 4rem 8rem;
+
+    @media only screen and (max-width: map-get($responsive, 'sm')) {
+      padding: 2rem 4rem;
+    }
   }
 
   &__characteristics-cards {
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: map-get($responsive, 'sm')) {
+      .last-card {
+        padding: 0;
+      }
+
+      flex-direction: column;
+    }
   }
 
   &__unitary-characteristic-card {
@@ -141,6 +225,15 @@ hr {
     img {
       width: 40%;
     }
+
+    @media only screen and (max-width: map-get($responsive, 'sm')) {
+      width: 100%;
+      padding-bottom: 3rem;
+
+      h3 {
+        text-align: center;
+      }
+    }
   }
 
   &__open-jobs-container {
@@ -148,6 +241,10 @@ hr {
     flex-direction: column;
     padding: 0 8rem 4rem 8rem;
     align-items: center;
+
+    @media only screen and (max-width: map-get($responsive, 'sm')) {
+      padding: 2rem 4rem;
+    }
   }
 
   &__open-jobs-header {
@@ -163,6 +260,12 @@ hr {
     h3 {
       padding-top: 4rem;
     }
+
+    @media only screen and (max-width: map-get($responsive, 'sm')) {
+      h3 {
+        padding-top: 2rem;
+      }
+    }
   }
 
   &__centralized-open-jobs {
@@ -172,6 +275,14 @@ hr {
 
     h3 {
       padding: 4rem 0 1.5rem 0;
+    }
+
+    @media only screen and (max-width: map-get($responsive, 'sm')) {
+      width: 100%;
+
+      h3 {
+        padding: 2rem 0 0.5rem 0;
+      }
     }
   }
 
@@ -185,9 +296,37 @@ hr {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding-bottom: 1rem;
 
     p, a {
       font-size: 1.6rem;
+    }
+
+    @media only screen and (max-width: map-get($responsive, 'sm')) {
+      flex-direction: column;
+      border-radius: 0.3rem;
+      background-color: #f0f0f0;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.3rem;
+
+      p, a {
+        font-size: 0.8rem;
+      }
+
+      p {
+        padding-top: 0.5rem;
+        line-height: normal;
+      }
+    }
+  }
+
+  .primary-button {
+    @media only screen and (max-width: map-get($responsive, 'sm')) {
+      span {
+        width: 100%;
+      }
+      font-size: 1.4rem;
     }
   }
 }

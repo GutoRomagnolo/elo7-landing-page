@@ -53,7 +53,7 @@ export class HomePageComponent implements OnInit {
   }
 
   public redirectToElo7Page(): void {
-    window.open('https://www.elo7.com.br/sobre', '_blank')
+    window.open('https://elo7.gupy.io', '_blank')
   }
 
   private formatOpenJobsLocations(): void {

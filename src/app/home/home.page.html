@@ -9,16 +9,23 @@
 <div class="main-container">
   <section class="main-container__top-text-container">
     <p class="paragraph--primary">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan
-      tortor arcu, vel fermentum odio varius at. Proin vulputate sodales diam at
-      pellentesque. Donec non odio at neque rhoncus blandit. Orci varius natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus
-      vitae libero ac dui dapibus iaculis vel eu risus. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Integer tempor iaculis porttitor. Duis
-      sagittis finibus lectus, malesuada convallis turpis scelerisque eu
+      O Elo7 é o maior site de produtos autorais do Brasil. Formamos a maior
+      comunidade de vendedores criativos e buscamos fomentar o comércio de
+      produtos autorais. Muito mais que um site, o Elo7 nasceu em 2008 com a
+      missão de <strong>transformar a vida das pessoas</strong> através de um
+      <strong>ambiente humanizado</strong> de compra e venda
+      <strong>que conecta e inspira</strong>, conferindo significado a cada
+      transação realizada. Trabalhamos para desenvolver as melhores tecnologias
+      e oferecer aos vendedores soluções simples e práticas para o gerenciamento
+      de suas vendas e para os compradores, uma experiência de compra fora de
+      série.
     </p>
-    <hr>
-    <button type="button" (click)="scrollToElement(target)" class="primary-button">
+    <hr />
+    <button
+      type="button"
+      (click)="scrollToElement(target)"
+      class="primary-button"
+    >
       <span>VAGAS EM ABERTO</span>
       <img
         src="./../../assets/icons/double-arrow-icon.svg"
@@ -35,14 +42,12 @@
       </div>
       <div class="main-container__ceo-words-paragraph">
         <p class="paragraph--primary">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          accumsan tortor arcu, vel fermentum odio varius at. Proin vulputate
-          sodales diam at pellentesque. Donec non odio at neque rhoncus blandit.
-          Orci varius natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Vivamus vitae libero ac dui dapibus iaculis
-          vel eu risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Integer tempor iaculis porttitor. Duis sagittis finibus lectus,
-          malesuada convallis turpis scelerisque eu
+          "Esse contato (entre comprador e vendedor de artesanatos) é
+          fundamental, ele gera um link em cada transação. A gente costuma dizer
+          que cada venda nossa tem uma história, porque é um item que foi
+          customizado, ele foi personalizado, ele participou de um evento
+          especial na vida do comprador. É um batizado, é um aniversário... Todo
+          o cuidado no processo de venda gera um senso de comunidade."
         </p>
       </div>
     </div>
@@ -50,11 +55,11 @@
   <section class="main-container__meet-team-container">
     <h3>CONHEÇA NOSSO TIME<br />FORA DE SÉRIE</h3>
     <div class="main-container__members-images-container">
-      <div class="main-container__unitary-member-image" *ngFor="let member of teamMembers">
-        <img
-          [src]="member.url"
-          alt="Foto de {{ member.name }}"
-        />
+      <div
+        class="main-container__unitary-member-image"
+        *ngFor="let member of teamMembers"
+      >
+        <img [src]="member.url" alt="Foto de {{ member.name }}" />
         <p class="paragraph--secundary">{{ member.name }}</p>
       </div>
     </div>
@@ -65,52 +70,39 @@
         <img src="./../../assets/icons/quality-icon.png" />
         <h3>QUALIDADE DE VIDA</h3>
         <p class="paragraph--secundary">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu
-          luctus sem. Nullam laoreet quam nibh, et lacinia quam aliquam at.
-          Suspendisse maximus urna sit amet imperdiet efficitur. Quisque sit
-          amet massa dapibus, malesuada mi non, eleifend sapien. Nulla nec
-          libero faucibus dui iaculis imperdiet. Vestibulum blandit lorem quis
-          leo lacinia, eu suscipit nisi aliquam. Maecenas velit tortor, finibus
-          sit amet congue ac, maximus vel est. Proin imperdiet ornare egestas.
-          In lacinia felis a malesuada rhoncus. Etiam sagittis pulvinar dui, ac
-          laoreet leo. Fusce ut mollis massa. Pellentesque eu tortor id nibh
-          ornare aliquam et at orci.
+          Não somente um ambiente humanizado apenas para compra e venda de
+          produtos criativos, mas também para toda a nossa equipe. Somos uma
+          empresa <strong>#foradeserie</strong>, então nos comprometemos com a
+          construção de um ambiente de trabalho diverso e dinâmico, dando espaço
+          de desenvolvimento a todos. Visamos sempre a criatividade, a
+          colaboração, a Tecnologia e a Inovação.
         </p>
       </div>
       <div class="main-container__unitary-characteristic-card">
         <img src="./../../assets/icons/relaxation-icon.png" />
         <h3>AMBIENTE DESCONTRAÍDO</h3>
         <p class="paragraph--secundary">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu
-          luctus sem. Nullam laoreet quam nibh, et lacinia quam aliquam at.
-          Suspendisse maximus urna sit amet imperdiet efficitur. Quisque sit
-          amet massa dapibus, malesuada mi non, eleifend sapien. Nulla nec
-          libero faucibus dui iaculis imperdiet. Vestibulum blandit lorem quis
-          leo lacinia, eu suscipit nisi aliquam. Maecenas velit tortor, finibus
-          sit amet congue ac, maximus vel est. Proin imperdiet ornare egestas.
-          In lacinia felis a malesuada rhoncus. Etiam sagittis pulvinar dui, ac
-          laoreet leo. Fusce ut mollis massa. Pellentesque eu tortor id nibh
-          ornare aliquam et at orci.
+          Seja no escritório, ou remotamente, nossa equipe trabalha em sintonia.
+          Melhor que isso, prezamos por um ambiente de trabalho mais leve e
+          descontraído, mas sem deixar o importante de lado. Essa característica
+          nos garante mais autenticidade, espontaneidade e mais conexão,
+          fortalecendo nosso trabalho em equipe. Nada melhor que um ambiente
+          desses, não?
         </p>
       </div>
-      <div class="main-container__unitary-characteristic-card">
+      <div class="main-container__unitary-characteristic-card last-card">
         <img src="./../../assets/icons/activities-icon.png" />
         <h3>ATIVIDADES EXTRAS</h3>
         <p class="paragraph--secundary">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu
-          luctus sem. Nullam laoreet quam nibh, et lacinia quam aliquam at.
-          Suspendisse maximus urna sit amet imperdiet efficitur. Quisque sit
-          amet massa dapibus, malesuada mi non, eleifend sapien. Nulla nec
-          libero faucibus dui iaculis imperdiet. Vestibulum blandit lorem quis
-          leo lacinia, eu suscipit nisi aliquam. Maecenas velit tortor, finibus
-          sit amet congue ac, maximus vel est. Proin imperdiet ornare egestas.
-          In lacinia felis a malesuada rhoncus. Etiam sagittis pulvinar dui, ac
-          laoreet leo. Fusce ut mollis massa. Pellentesque eu tortor id nibh
-          ornare aliquam et at orci.
+          Como nossa cultura é pautada nos nossos principais valores:
+          Criatividade, Colaboração, Tecnologia e Inovação. Aplicamos tudo isso
+          em nossas atividades extras, como rodas de conversas sobre diversos
+          temas, Programa de Inserção a Cultura, feedbacks constantes, Tech Talks semanais, entre
+          outros. Nesses momentos, colocamos em prática tudo aquilo que nos torna <strong>extremamente criativos</strong>!
         </p>
       </div>
     </div>
-    <hr>
+    <hr />
     <button type="button" (click)="redirectToElo7Page()" class="primary-button">
       <span>SAIBA MAIS</span>
       <img
@@ -121,19 +113,26 @@
   </section>
   <section class="main-container__open-jobs-container">
     <div class="main-container__open-jobs-header" #target>
-      <img src="./../../assets/images/bottom-image.png"/>
+      <img src="./../../assets/images/bottom-image.png" />
       <h3>VAGAS EM ABERTO</h3>
     </div>
     <div class="main-container__centralized-open-jobs">
-    <div class="main-container__jobs-subtitle">
-      <h3>DESENVOLVIMENTO</h3>
-    </div>
-    <div class="main-container__open-jobs-cards">
-      <div class="main-container__active-open-jobs" *ngFor="let job of activeOpenJobs">
-        <a class="standard-link" [href]="job.link" title="Abrir link da vaga">{{ job.position }}</a>
-        <p class="paragraph--secundary"> {{ job.formatedLocation ? job.formatedLocation : 'Remoto' }}</p>
+      <div class="main-container__jobs-subtitle">
+        <h3>DESENVOLVIMENTO</h3>
       </div>
-    </div>
+      <div class="main-container__open-jobs-cards">
+        <div
+          class="main-container__active-open-jobs"
+          *ngFor="let job of activeOpenJobs"
+        >
+          <a class="standard-link" [href]="job.link" title="Abrir link da vaga"
+            >{{ job.position }}</a
+          >
+          <p class="paragraph--secundary">
+            {{ job.formatedLocation ? job.formatedLocation : 'Remoto' }}
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 </div>
