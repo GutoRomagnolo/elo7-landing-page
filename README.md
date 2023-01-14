@@ -1,27 +1,46 @@
 # Elo7LandingPage
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
+Esse é o projeto de uma landing page do site Elo7. Nessa página, estão presentes algumas características e benefícios da carreira na empresa. 
 
-## Development server
+## Tecnologias utilizadas e justificativas
+| Abrangência                | Utilizado              
+| :------------------------: | ---------------------         
+| Linguagem                  | TypeScript        
+| Estilo                     | SCSS                     
+| Requisição                 | HTTP Client (Angular)
+| *Framework (opcional)*      | Angular
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Por ser uma oportunidade boa para construir uma aplicação do zero utilizando Angular, acabei aproveitando para experimentar um pouco mais a fundo do TypeScript. Como essa linguagem é um superset do JavaScript, acabei utilizando do mesmo jeito todo o meu conhecimento em JS. 
 
-## Code scaffolding
+Ademais, adicionei a biblioteca Pupeteer para poder realizar um teste em Karma & Jasmine utilizando do Google Chrome Headless, sem necessariamente ter o Browser instalado no computador.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Sobre o client de requisições, não vejo a necessidade utilizar o Axios (que é baseada no Angular HTTP Client, inclusive), pois o Angular já oferece o HTTP Client para trabalhar com requisições. Utilizei também algumas funcionalidades da biblioteca RxJS e também a biblioteca QuickLink para aplicar uma estratégia de pré-carregamento.
 
-## Build
+Em estilos, trabalhei com o SCSS e media queries para construir a responsividade da página. =)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Requisitos
 
-## Running unit tests
+- NodeJS v19.4.0
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Caso possua o [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm), basta rodar no terminal:
+```sh
+  nvm use
+```
 
-## Running end-to-end tests
+## Instalação
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Após obter a versão correta do NodeJS, rode no terminal:
+```sh
+  npm install
+```
 
-## Further help
+## Inicializar a aplicação
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Após todas as instalacões:
+```sh
+  npm run start
+```
+
+A página irá abrir automaticamente na URL ``http://localhost:4200/``
+
+
