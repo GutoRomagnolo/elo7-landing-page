@@ -1,6 +1,6 @@
 # Elo7 Landing Page - Extraordinariamente criativo
 
-Esse é o projeto de uma landing page do site Elo7. Nessa página, estão presentes algumas características e benefícios da carreira na empresa. 
+Esse é o projeto de uma landing page do site Elo7. Nessa página, estão presentes algumas características e benefícios da carreira na empresa. (Os links das vagas já estavam indisponíveis antes)
 
 ## Tecnologias utilizadas e justificativas
 | Abrangência                | Utilizado              
