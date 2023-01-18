@@ -125,9 +125,14 @@
           class="main-container__active-open-jobs"
           *ngFor="let job of activeOpenJobs"
         >
-          <a class="standard-link" [href]="job.link" title="Abrir link da vaga"
-            >{{ job.position }}</a
+          <a 
+            class="standard-link" 
+            [href]="job.link" 
+            title="Abrir link da vaga"
+            target="_blank"
           >
+            {{ job.position }}
+          </a>
           <p class="paragraph--secundary">
             {{ job.formatedLocation ? job.formatedLocation : 'Remoto' }}
           </p>

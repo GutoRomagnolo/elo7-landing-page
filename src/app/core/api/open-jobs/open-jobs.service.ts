@@ -24,7 +24,6 @@ export class OpenJobsService {
     const activeOpenJobs: OpenJobs[] = [];
     rawOpenJobs.forEach((rawOpenJob: any) => {
       if (rawOpenJob.ativa) {
-
         const mappedOpenJob: OpenJobs = {
           position: rawOpenJob.cargo,
           active: rawOpenJob.ativa,
