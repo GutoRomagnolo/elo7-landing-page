@@ -2,12 +2,12 @@
   <img
     src="./../../assets/images/header-image.png"
     alt="Time do Elo7 reunido"
-  />
+  >
   <h1>Trabalhe no Elo7</h1>
 </header>
 
-<div class="main-container">
-  <section class="main-container__top-text-container">
+<main class="main-container">
+  <div class="main-container__top-text-container">
     <p class="paragraph--primary">
       O Elo7 é o maior site de produtos autorais do Brasil. Formamos a maior
       comunidade de vendedores criativos e buscamos fomentar o comércio de
@@ -20,7 +20,7 @@
       de suas vendas e para os compradores, uma experiência de compra fora de
       série.
     </p>
-    <hr />
+    <hr>
     <button
       type="button"
       (click)="scrollToElement(target)"
@@ -30,12 +30,12 @@
       <img
         src="./../../assets/icons/double-arrow-icon.svg"
         alt="Redirecionar para vagas em aberto"
-      />
+      >
     </button>
-  </section>
+  </div>
   <section class="main-container__ceo-area-container">
-    <img src="./../../assets/images/video-placeholder.png" />
-    <div class="main-container__ceo-words-container">
+    <img src="./../../assets/images/video-placeholder.png" alt="Imagem demonstrativa do vídeo de Carlos Curioni">
+    <article class="main-container__ceo-words-container">
       <div class="main-container__ceo-words-title">
         <h3>PALAVRA DO CEO</h3>
         <h4>Carlos Curioni</h4>
@@ -50,24 +50,24 @@
           o cuidado no processo de venda gera um senso de comunidade."
         </p>
       </div>
-    </div>
+    </article>
   </section>
   <section class="main-container__meet-team-container">
-    <h3>CONHEÇA NOSSO TIME<br />FORA DE SÉRIE</h3>
+    <h3>CONHEÇA NOSSO TIME<br>FORA DE SÉRIE</h3>
     <div class="main-container__members-images-container">
       <div
         class="main-container__unitary-member-image"
         *ngFor="let member of teamMembers"
       >
-        <img [src]="member.url" alt="Foto de {{ member.name }}" />
+        <img [src]="member.url" alt="Foto de {{ member.name }}">
         <p class="paragraph--secundary">{{ member.name }}</p>
       </div>
     </div>
   </section>
   <section class="main-container__company-characteristics">
     <div class="main-container__characteristics-cards">
-      <div class="main-container__unitary-characteristic-card">
-        <img src="./../../assets/icons/quality-icon.png" />
+      <article class="main-container__unitary-characteristic-card">
+        <img src="./../../assets/icons/quality-icon.png" alt="Qualidade de vida">
         <h3>QUALIDADE DE VIDA</h3>
         <p class="paragraph--secundary">
           Não somente um ambiente humanizado apenas para compra e venda de
@@ -77,9 +77,9 @@
           de desenvolvimento a todos. Visamos sempre a criatividade, a
           colaboração, a Tecnologia e a Inovação.
         </p>
-      </div>
-      <div class="main-container__unitary-characteristic-card">
-        <img src="./../../assets/icons/relaxation-icon.png" />
+      </article>
+      <article class="main-container__unitary-characteristic-card">
+        <img src="./../../assets/icons/relaxation-icon.png" alt="Ambiente descontraído">
         <h3>AMBIENTE DESCONTRAÍDO</h3>
         <p class="paragraph--secundary">
           Seja no escritório, ou remotamente, nossa equipe trabalha em sintonia.
@@ -89,9 +89,9 @@
           fortalecendo nosso trabalho em equipe. Nada melhor que um ambiente
           desses, não?
         </p>
-      </div>
-      <div class="main-container__unitary-characteristic-card last-card">
-        <img src="./../../assets/icons/activities-icon.png" />
+      </article>
+      <article class="main-container__unitary-characteristic-card last-card">
+        <img src="./../../assets/icons/activities-icon.png" alt="Atividades extras">
         <h3>ATIVIDADES EXTRAS</h3>
         <p class="paragraph--secundary">
           Como nossa cultura é pautada nos nossos principais valores:
@@ -100,20 +100,20 @@
           temas, Programa de Inserção a Cultura, feedbacks constantes, Tech Talks semanais, entre
           outros. Nesses momentos, colocamos em prática tudo aquilo que nos torna <strong>extremamente criativos</strong>!
         </p>
-      </div>
+      </article>
     </div>
-    <hr />
+    <hr>
     <button type="button" (click)="redirectToElo7Page()" class="primary-button">
       <span>SAIBA MAIS</span>
       <img
         src="./../../assets/icons/double-arrow-icon.svg"
         alt="Redirecionar para o saiba mais"
-      />
+      >
     </button>
   </section>
   <section class="main-container__open-jobs-container">
     <div class="main-container__open-jobs-header" #target>
-      <img src="./../../assets/images/bottom-image.png" />
+      <img src="./../../assets/images/bottom-image.png" alt="Vagas em aberto">
       <h3>VAGAS EM ABERTO</h3>
     </div>
     <div class="main-container__centralized-open-jobs">
@@ -140,4 +140,4 @@
       </div>
     </div>
   </section>
-</div>
+</main>

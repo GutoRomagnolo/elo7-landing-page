@@ -15,9 +15,13 @@ export class OpenJobsService {
     const url = environment.openjobs;
     return this.httpClient.get<{ vagas: [] }>(url).pipe(
       map(openJobsObject => {
-        return this.mapRawOpenJobsToInterface(openJobsObject.vagas)
+        return this.getActiveOpenJobs(openJobsObject.vagas)
       })
     )
+  }
+
+  private getActiveOpenJobs(rawOpenJobs: []): OpenJobs[] {
+    return this.mapRawOpenJobsToInterface(rawOpenJobs)
   }
 
   private mapRawOpenJobsToInterface(rawOpenJobs: []): OpenJobs[] {
