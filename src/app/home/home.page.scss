@@ -10,17 +10,16 @@ h1 {
   }
 }
 
-h3 {
+h2 {
   color: #58575b;
   font-size: 2rem;
 
-  
   @media only screen and (max-width: map-get($responsive, 'sm')) {
     font-size: 1.2rem;
   }
 }
 
-h4 {
+h3 {
   font-size: 1.1rem;
   color: #ffc02a;
 }
@@ -121,7 +120,7 @@ hr {
     display: flex;
     flex-direction: column;
 
-    h3 {
+    h2 {
       padding-bottom: 0.5rem;
     }
   }
@@ -143,14 +142,14 @@ hr {
     font-weight: 700;
     background-color: #f0f0f0;
 
-    h3 {
+    h2 {
       padding-bottom: 4rem;
     }
 
     @media only screen and (max-width: map-get($responsive, 'sm')) {
       padding: 2rem 4rem;
 
-      h3 {
+      h2 {
         padding-bottom: 2rem;
       }
     }
@@ -218,7 +217,7 @@ hr {
     align-items: center;
     width: 30%;
 
-    h3 {
+    h2 {
       padding: 1.5rem 0;
     }
 
@@ -230,7 +229,7 @@ hr {
       width: 100%;
       padding-bottom: 3rem;
 
-      h3 {
+      h2 {
         text-align: center;
       }
     }
@@ -257,12 +256,12 @@ hr {
       width: 100%;
     }
 
-    h3 {
+    h2 {
       padding-top: 4rem;
     }
 
     @media only screen and (max-width: map-get($responsive, 'sm')) {
-      h3 {
+      h2 {
         padding-top: 2rem;
       }
     }
@@ -273,14 +272,14 @@ hr {
     flex-direction: column;
     width: 70%;
 
-    h3 {
+    h2 {
       padding: 4rem 0 1.5rem 0;
     }
 
     @media only screen and (max-width: map-get($responsive, 'sm')) {
       width: 100%;
 
-      h3 {
+      h2 {
         padding: 2rem 0 0.5rem 0;
       }
     }

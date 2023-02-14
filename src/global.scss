@@ -10,8 +10,12 @@ body {
   font-family: Museo, 'sans-serif';
 }
 
-h1, h3, h4, p {
+h1, h2, h3, p {
   margin: 0;
+}
+
+h2, h3 {
+  text-transform: uppercase;
 }
 
 p {
@@ -32,6 +36,17 @@ p {
 
   &:hover {
     transform: scale(1.01);
+  }
+
+  &:after {
+    display: flex;
+    content: '';
+    background: url("./assets/icons/double-arrow-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
   }
 
   img {

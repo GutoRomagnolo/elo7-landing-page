@@ -20,25 +20,20 @@
       de suas vendas e para os compradores, uma experiência de compra fora de
       série.
     </p>
-    <hr>
-    <button
-      type="button"
+    <hr/>
+    <a
       (click)="scrollToElement(target)"
       class="primary-button"
     >
-      <span>VAGAS EM ABERTO</span>
-      <img
-        src="./../../assets/icons/double-arrow-icon.svg"
-        alt="Redirecionar para vagas em aberto"
-      >
-    </button>
-  </div>
+      <span>Vagas em aberto</span>
+    </a>
+  </section>
   <section class="main-container__ceo-area-container">
     <img src="./../../assets/images/video-placeholder.png" alt="Imagem demonstrativa do vídeo de Carlos Curioni">
     <article class="main-container__ceo-words-container">
       <div class="main-container__ceo-words-title">
-        <h3>PALAVRA DO CEO</h3>
-        <h4>Carlos Curioni</h4>
+        <h2>Palavra do CEO</h2>
+        <h3>Carlos Curioni</h3>
       </div>
       <div class="main-container__ceo-words-paragraph">
         <p class="paragraph--primary">
@@ -53,7 +48,7 @@
     </article>
   </section>
   <section class="main-container__meet-team-container">
-    <h3>CONHEÇA NOSSO TIME<br>FORA DE SÉRIE</h3>
+    <h2>CONHEÇA NOSSO TIME<br />FORA DE SÉRIE</h2>
     <div class="main-container__members-images-container">
       <div
         class="main-container__unitary-member-image"
@@ -68,7 +63,7 @@
     <div class="main-container__characteristics-cards">
       <article class="main-container__unitary-characteristic-card">
         <img src="./../../assets/icons/quality-icon.png" alt="Qualidade de vida">
-        <h3>QUALIDADE DE VIDA</h3>
+        <h2>QUALIDADE DE VIDA</h2>
         <p class="paragraph--secundary">
           Não somente um ambiente humanizado apenas para compra e venda de
           produtos criativos, mas também para toda a nossa equipe. Somos uma
@@ -80,7 +75,7 @@
       </article>
       <article class="main-container__unitary-characteristic-card">
         <img src="./../../assets/icons/relaxation-icon.png" alt="Ambiente descontraído">
-        <h3>AMBIENTE DESCONTRAÍDO</h3>
+        <h2>AMBIENTE DESCONTRAÍDO</h2>
         <p class="paragraph--secundary">
           Seja no escritório, ou remotamente, nossa equipe trabalha em sintonia.
           Melhor que isso, prezamos por um ambiente de trabalho mais leve e
@@ -92,7 +87,7 @@
       </article>
       <article class="main-container__unitary-characteristic-card last-card">
         <img src="./../../assets/icons/activities-icon.png" alt="Atividades extras">
-        <h3>ATIVIDADES EXTRAS</h3>
+        <h2>ATIVIDADES EXTRAS</h2>
         <p class="paragraph--secundary">
           Como nossa cultura é pautada nos nossos principais valores:
           Criatividade, Colaboração, Tecnologia e Inovação. Aplicamos tudo isso
@@ -102,23 +97,19 @@
         </p>
       </article>
     </div>
-    <hr>
-    <button type="button" (click)="redirectToElo7Page()" class="primary-button">
+    <hr />
+    <a href="https://elo7.gupy.io" target="_blank" class="primary-button">
       <span>SAIBA MAIS</span>
-      <img
-        src="./../../assets/icons/double-arrow-icon.svg"
-        alt="Redirecionar para o saiba mais"
-      >
-    </button>
+    </a>
   </section>
   <section class="main-container__open-jobs-container">
     <div class="main-container__open-jobs-header" #target>
-      <img src="./../../assets/images/bottom-image.png" alt="Vagas em aberto">
-      <h3>VAGAS EM ABERTO</h3>
+      <img src="./../../assets/images/bottom-image.png" alt="Vagas em aberto"/>
+      <h2>VAGAS EM ABERTO</h2>
     </div>
     <div class="main-container__centralized-open-jobs">
       <div class="main-container__jobs-subtitle">
-        <h3>DESENVOLVIMENTO</h3>
+        <h2>DESENVOLVIMENTO</h2>
       </div>
       <div class="main-container__open-jobs-cards">
         <div
@@ -134,7 +125,7 @@
             {{ job.position }}
           </a>
           <p class="paragraph--secundary">
-            {{ job.formatedLocation ? job.formatedLocation : 'Remoto' }}
+            {{ job.location }}
           </p>
         </div>
       </div>

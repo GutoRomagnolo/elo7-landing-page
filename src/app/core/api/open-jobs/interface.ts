@@ -3,9 +3,5 @@ export interface OpenJobs {
   active: boolean;
   link: string;
   formatedLocation?: string;
-  location: any | {
-    neighborhood?: string
-    city?: string
-    country?: string
-  };
+  location?: string;
 }

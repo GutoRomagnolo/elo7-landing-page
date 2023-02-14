@@ -32,11 +32,9 @@ export class OpenJobsService {
           position: rawOpenJob.cargo,
           active: rawOpenJob.ativa,
           link: rawOpenJob.link,
-          location: rawOpenJob.localizacao ? { 
-            neighborhood: rawOpenJob.localizacao.bairro,
-            city: rawOpenJob.localizacao.cidade,
-            country: rawOpenJob.localizacao.pais
-          } : 'Remoto'
+          location: rawOpenJob.localizacao 
+            ? `${rawOpenJob.localizacao.bairro} - ${rawOpenJob.localizacao.cidade}, ${rawOpenJob.localizacao.pais}` 
+            : 'Remoto'
         }
         activeOpenJobs.push(mappedOpenJob);
       }

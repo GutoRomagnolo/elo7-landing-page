@@ -38,7 +38,6 @@ export class HomePageComponent implements OnInit {
     this.activatedRoute.data.subscribe(routeResponse => {
       if (routeResponse.activeOpenJobs) {
         this.activeOpenJobs = routeResponse.activeOpenJobs;
-        this.formatOpenJobsLocations();
       }
     })
   }
@@ -49,19 +48,5 @@ export class HomePageComponent implements OnInit {
       block: "start", 
       inline: "nearest"
     });
-  }
-
-  public redirectToElo7Page(): void {
-    window.open('https://elo7.gupy.io', '_blank')
-  }
-
-  private formatOpenJobsLocations(): void {
-    this.activeOpenJobs.forEach(activeJob => {
-      if (activeJob.location != 'Remoto') {
-        activeJob.formatedLocation = `
-          ${activeJob.location.neighborhood} - ${activeJob.location.city}, ${activeJob.location.country}
-        `;
-      }
-    })
   }
 }
